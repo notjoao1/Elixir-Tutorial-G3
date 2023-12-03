@@ -14,6 +14,6 @@ Macros are powerful meta-programming mechanisms that can be used in Elixir to ex
 
 ## Problem
 
-Elixir has mechanisms such as `import/1`, `alias/1`, and `use/1` to establish dependencies between modules. Code implemented with these mechanisms does not characterize a smell by itself. However, while the import/1 and alias/1 directives have lexical scope and only facilitate a module calling functions of another, the `use/1` directive has a broader scope, which can be problematic.
+Elixir has mechanisms such as `import/1`, `alias/1`, and `use/1` to establish dependencies between modules. Code implemented with these mechanisms does not characterize a smell by itself. However, while the `import/1` and `alias/1` directives have lexical scope and only facilitate a module calling functions of another, the `use/1` directive has a broader scope, which can be problematic.
 
 The `use/1` directive allows a module to inject any type of code into another, including propagating dependencies. In this way, using the `use/1` directive makes code harder to read, because to understand exactly what will happen when it references a module, it is necessary to have knowledge of the internal details of the referenced module.
