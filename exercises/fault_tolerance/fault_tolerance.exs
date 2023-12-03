@@ -1,5 +1,8 @@
-# Desafio: muda este código para que possa correr para sempre com recuperação automática no caso de falhas
-# Dica: https://elixirschool.com/en/lessons/intermediate/concurrency#process-linking-2
+# Challenge: change the code so it can run forever with automatic fault recovery
+# Hint: https://elixirschool.com/en/lessons/intermediate/concurrency#process-linking-2
+# Can also use monitor: https://elixirschool.com/en/lessons/intermediate/concurrency#process-monitoring-3
+
+# Run in iex: iex fault_tolerance.exs
 
 defmodule Example do
   # 50% chance to work, 50% chance to fail
@@ -11,7 +14,7 @@ defmodule Example do
         Process.sleep(1000)
         work()
       false ->
-        10/0  # arithmetic exception
+        exit(:cant_work)  # arithmetic exception
     end
   end
 
@@ -20,7 +23,5 @@ defmodule Example do
   end
 end
 
-# Para correr (no iex):
-#
-#   Code.require_file("fault_tolerance.exs")
-#   Example.run()
+
+Example.run()

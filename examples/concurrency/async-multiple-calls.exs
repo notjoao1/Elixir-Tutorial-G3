@@ -1,3 +1,5 @@
+# Run in iex: iex async-call.exs
+
 defmodule Looper do
   def loop() do
     receive do
