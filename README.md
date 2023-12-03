@@ -10,7 +10,8 @@ Refer to the [Elixir Installation Guide](https://elixir-lang.org/install.html) f
 
 Installing through the official guide includes the following:
 - `elixirc`: compiler
-- `iex`: interpreter
+- `elixir`: interpreter
+- `iex`: interactive interpreter
 - `mix`: bundler/dependency manager
 
 
@@ -18,16 +19,16 @@ Installing through the official guide includes the following:
 
 The recommended IDE is `vs-code`, but you can develop with any text editor.
 
-If you use `vs-code`, install [this extension]([https://](https://marketplace.visualstudio.com/items?itemName=JakeBecker.elixir-ls)) to get many helpful features.
+If you use `vs-code`, install [this extension](https://marketplace.visualstudio.com/items?itemName=JakeBecker.elixir-ls) to get many helpful features.
 
-**Note**: if you are using WSL, this extension may be broken. If you really want features such as autocompletion, documentation on hover and others, use Windows instead.
+**Note**: if you are using WSL, this extension may be broken. If you want features such as autocompletion, documentation on hover, and others, use Windows instead.
 
 
 ## Examples 
 
 The folder `/examples` contains examples about different topics of the language.
 
-These are supposed to serve as support to understand concepts that are used to solve exercises.
+These are supposed to serve as support for understanding concepts that are used to solve exercises.
 
 
 ## Exercises
