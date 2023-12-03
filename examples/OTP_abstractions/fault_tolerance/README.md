@@ -4,7 +4,8 @@ Mock server that receives messages and processes them to demonstrate:
 - `GenServer`
 - `Supervisor`
   
-Uses `Supervisor` to supervise a `GenServer` and always restart it when it fails, for building a fault tolerant system.
+Uses `Supervisor` to supervise a `GenServer`. When the `GenServer` fails, the `Supervisor` automatically restarts it.
+Demonstrates a fault tolerant system.
 
 
 ## How to run
