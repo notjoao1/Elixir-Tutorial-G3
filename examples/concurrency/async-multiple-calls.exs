@@ -6,6 +6,7 @@ defmodule Looper do
     after
       2000 ->
         IO.puts("timeout")
+        exit(:over)
     end
     loop()
   end
@@ -25,4 +26,6 @@ Enum.each(1..5, fn x -> spawn(fn ->
   end)
 end)
 
+IO.puts("do slow stuff here")
+# Go receive the results from async calls
 Looper.loop()

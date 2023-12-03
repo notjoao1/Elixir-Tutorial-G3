@@ -14,7 +14,7 @@ spawn(fn ->
   send(owner_pid, {:result, result})
 end)
 
-IO.puts("i'm not blocked, my worker is working. i can do whatever i want :)")
+IO.puts("i'm not blocked, my worker is working")
 
 # Wait for the spawned process to send a message
 receive do
