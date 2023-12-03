@@ -8,10 +8,10 @@ defmodule Example do
     case work do
       true ->
         IO.puts("working")
-        Process.sleep(200)
+        Process.sleep(1000)
         work()
       false ->
-        exit(:cant_work)
+        10/0  # arithmetic exception
     end
   end
 
