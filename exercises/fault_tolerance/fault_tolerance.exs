@@ -14,7 +14,7 @@ defmodule Example do
         Process.sleep(1000)
         work()
       false ->
-        exit(:cant_work)  # arithmetic exception
+        exit(:cant_work) 
     end
   end
 
