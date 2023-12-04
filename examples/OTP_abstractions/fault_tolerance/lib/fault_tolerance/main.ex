@@ -8,7 +8,7 @@ defmodule Fault_tolerance.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Cria worker1 desta forma: Fault_tolerance.Worker1.start_link(arg)
+      # Cria server desta forma: Fault_tolerance.Server.start_link(arg)
       {Fault_tolerance.Server, nil}
    ]
 
