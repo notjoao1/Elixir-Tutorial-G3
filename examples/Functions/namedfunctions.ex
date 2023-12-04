@@ -10,7 +10,7 @@ defmodule Greeter do
 end
 
 Greeter.hello("Sean")
-"Hello, Sean"
+# >> "Hello, Sean"
 
 # If our function body only spans one line, we can shorten it further with do:
 
