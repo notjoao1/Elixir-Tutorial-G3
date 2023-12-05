@@ -11,8 +11,8 @@ Refer to the [Elixir Installation Guide](https://elixir-lang.org/install.html) f
 Installing through the official guide includes the following:
 - `elixirc`: compiler
 - `elixir`: interpreter
-- `iex`: interactive interpreter
-- `mix`: bundler/dependency manager
+- `iex`: interactive shell
+- `mix`: project manager/bundler/dependency manager
 
 
 ### IDE
